@@ -1,0 +1,148 @@
+#Q12
+#(i)
+def ui():
+    w=(10,20,30,40,50)
+    s=0
+    for i in w:
+        s+=i
+
+    print("Sum: ",s)
+    print("Avg: ",s/len(w))
+
+    #(ii)
+
+    x=int(input("How many dance forms: "))
+    t=()
+    for i in range(x):
+        w=input("Enter dance form: ")
+        t+=(w,)
+
+    l=list(t)
+    pw=input("Enter dance form to be entered at the last: ")
+    l.append(pw)
+
+    print(tuple(l))
+
+
+#Q13
+def py():
+
+    w=(10,20,30,40,50)
+    a=0
+
+    x=int(input("Enter element which is to be searched: "))
+    for i in w:
+        if i==str(x):
+            a+=i
+
+    print(i)
+
+
+py()
+
+
+#Input n numbers and store them in a tuple print the max min number along with sum and mean(average) of all elements
+
+
+
+def gyn():
+
+    t=()
+    w=int(input("How many values do you want to enter: "))
+    for i in range(w):
+        we=int(input("Enter number: "))
+        t+=(we,)
+
+    print("Max number: ",max(t))
+    print("Min number: ",min(t))
+
+    c=0
+    for i in t:
+        c+=i
+
+    print("Sum of numbers",c)
+
+    print("Mean: ",c//len(t),"%")
+
+
+
+def kla():
+    
+    t=(10,20,30,40,50,60,70,80,90,100)
+    t1=()
+    t2=()
+    for i in range(len(t)):
+        if i%2==0:
+            t1+=(t[i],)
+        else:
+            t2+=(t[i],)
+    print(t1)
+    print(t2)
+
+
+
+#alcoff syrup
+def raf():
+
+    t=("Classical","Western")
+    x=list(t)
+    dac=str(input("Enter dance form: "))
+    x.append(dac)
+    t1=tuple(x)
+
+    print(t1)
+
+
+
+def kir():
+    t=(10,20,30,40,50,60)
+    c=0
+    j=0
+    for i in t:
+        c+=i
+        j+=1
+    print("Avg",c/j)
+
+
+
+def git():
+    t1=(10,20,30,40,50)
+    m=t1[0]
+    m1=t1[0]
+    for i in range(1,len(t1)):
+        if t1[i]>m:
+            m=t1[i]
+        elif t1[i]<m1:
+            m1=t1[i]
+    print(m,m1)
+
+
+#display unique and similar items in 2 diff lists
+def yy():
+    w=[100,200,300,200,100]
+    u=[]
+    s=[]
+    for i in w:
+        if i not in u:
+            u.append(i)
+        else:
+            s.append(i)
+
+    print("Unique elements: ",u)
+    print("Similar elements: ",s)
+
+
+def sting():
+   w='arnav123'
+   x=0
+   y=0
+   k=""
+
+   for i in w:
+       if i.isdigit():
+           k+=i
+           x+=int(i)
+           y=1
+           print("Sum of Digits: ",x)
+   print("Original string: ",w)
+

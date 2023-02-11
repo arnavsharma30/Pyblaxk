@@ -1,0 +1,429 @@
+def dig():
+    #Print sum of the digits of a number
+    w=int(input("Enter number"))
+    s=0
+    while(w>0):
+        c=w%10
+        s+=c
+        w=w//10
+    print("sum of the digits=",s)
+
+
+def gig():
+    #WAP to pri9nt factorial of a given number
+    w=int(input("Enter number"))
+    l=1
+    for i in range(1,w+1):
+        l=l*i
+    print(l)
+
+
+def cap():
+    #WAP to print first letter of each word to capital
+
+    a=input("Enter sectence")
+    w=a.split()
+    s="_"
+    for i in w:
+        s=s+i.capitalize()+" "
+    print(s)
+
+    #Second way
+
+    a=input("Enter sectence")
+    w=a.split()
+    print(w)
+    for i in w:
+        s=i[0].upper()
+        for j in range(1,len(i)):
+            s=s+i[j]
+        print(s,end=' ')
+
+
+def kal():
+    #print prime numbers 1 to 500
+    #print armstrong between 1 to 1000
+
+
+
+    for i in range(2,50):
+        count=0
+        for j in range(1,i+1):
+            if i%j==0:
+                count+=1
+        if count==2:
+            print(i,end='+')
+    s=0
+    for i in range(2,11):
+        print(i," X ",i," = ", i*i)
+
+
+    #print tables from 2 to 7
+
+    for i in range(2,8):
+        for w in range(1,10):
+            print(i," X ",w," = ", i*w,end=" ")
+
+
+def jstatic():
+    no1 = int(input("Enter 1st no"))
+    no2 = int(input("Enter 2nd no"))
+    no3 = int(input("Enter 3rd no"))
+
+    if no1 > no2 and no1 > no3 :
+        print("no1 is greatest")
+    elif no2 > no1 and no2 > no3 :
+        print("no2 is greatest")
+    else :
+        print("no3 is greatest")
+
+def odd():
+    #largest odd even number
+    w=int(input("How many entries"))
+    lodd=0
+    leven=0
+    for i in range(w):
+        xy=int(input("Enter number"))
+        if xy%2==0: 
+            if xy>leven:
+                leven=xy
+        elif xy>lodd and xy%2==1:
+            lodd=xy
+    print("largest Even=",leven)
+    print("largest odd=",lodd)
+
+
+def thx():
+    #addition of input odd and even numbers
+    n=int(input("How many entries"))
+    se=0
+    d=0
+    for i in range(n):
+        y=int(input("Enter number"))
+        if y%2==0:
+            se+=y
+        else:
+            d+=y
+
+    print("Sum of even numbers: ",se)
+    print("Sum of odd numbers: ",d)
+
+    n=2+9*((3*12)-8)/10
+    print(n)
+
+def yesik():
+    #print factors of a given number
+
+    w=int(input("Enter the number jiska factor print karna hai: "))
+    for i in range(1,w+1):
+        if w%i==0:
+            print(i)
+
+
+    #prime or not
+    w=int(input("Enter the number to check if its prime or not: "))
+    count=0
+    for i in range(1,w+1):
+        if w%i==0:
+            count+=1
+        
+    if count==2:
+        print("Prime number")
+    else:
+        print("Composite number")
+
+    #prime or not
+    w=int(input("Enter the number to check if its prime or not: "))
+    f=0
+    for i in range(2,w):
+        if w%i==0:
+            f=1
+    if f==1:
+        print("composite number")
+    else:
+        print("Prime number")
+
+    #prime or not
+    w=int(input("Enter the number to check if its prime or not: "))
+    f=0
+    for i in range(2,w//2+1):
+        if w%i==0:
+            print("composite number")
+            break
+    else:
+        print("Prime number")
+
+
+def yes():
+    #printing reverse of a number
+
+    p=int(input("enter number"))
+    z=p
+    s=""
+    while(p>0):
+        r=p%10
+        s+=str(r)
+        p=p//10
+    print(s)
+    if s==str(z):
+        print("Palindrome number")
+    else:
+        print("No")
+
+
+    #2nd method
+    def palindrome(p1):
+        z=p
+        s=0
+        while(p>0):
+            r=p%10
+            s=s*10+r
+            p=p//10
+        if s==z:
+            print("Palindrome number")
+        else:
+            print("No")
+    p=int(input("enter number"))
+    palindrome(p)
+
+
+def she():
+    #WAP to print the vowels in a provided string
+
+    a="Arnav pharma"
+    b=a.split()
+    for i in b:
+        if i[0] in "aeiouAEIOU":
+            print(i)
+
+def ko():
+    #WAP take input and print the vowels and consonants
+
+    a=input("E")
+    v=0
+    c=0
+    for i in a:
+        print(i)
+        if i in 'aeiouAEIOU':
+            v=v+1
+        else:
+            c=c+1
+    print("vowels=",v)
+    print("consonants=",c)
+
+    #while loop
+    for i in range(1,11,2):
+        print("arnav",end="")
+    print()
+    i=1
+    while(i<11):
+        print("arnav",end="")
+        i+=1
+
+def prin():
+    #WAP to print the table of a given number in the format shown below
+    # 2 X 1 = 2
+
+    n=int(input("Enter the number for the table"))
+    for i in range(1,11):
+
+        print(n," X ",i," = ",n*i)
+
+
+def red():
+    #read 5 number and print max and min numbers
+    y=int(input("Enter number"))
+    max=y
+    min=y
+    for i in range(4):
+        y=int(input("Enter number"))
+        if y>max:
+            max=y
+        elif y<min:
+            min=y
+    print("maximum no=",max)
+    print("minimum no=",min)
+
+
+    
+
+def ulti():
+#WAP to print count and print count of vowels of each word in a sentence
+    w=input("Enter sentence")
+    p=w.split()
+    l=0
+    l1=""
+    for i in p:
+        for iq in i:
+            if iq in "AEIOUaeiou":
+                l+=1
+                l1=l1+iq
+    print("vowels=",l1)
+    print("Count= ",l)
+
+def aw():
+#1
+#33
+#555
+#7777
+    for i in range(1,8,2):
+        for j in range(1,i+1):
+            print(i,end="")
+        print()
+
+#revision 4/1/2023
+#pg 5.46 Q6 onwards
+
+def code():
+    code=input("Enter season code:")
+    if code=="w":
+        print("Winter season")
+    elif code=="r":
+        print("Rainy season")
+    else:
+        print("Summer season")
+
+
+#Q7
+
+
+#(i)
+#guru99 1
+#guru99 2
+#guru99 3
+
+#(ii)
+#100
+#200
+#300
+
+
+#(iii)
+#
+
+
+
+#Q8
+#ok
+#average
+
+
+def lem():
+    #Q14
+    w=input("Enter list of numbers")
+    p=[]
+    l=[]
+    for i in w:
+        if i==2:
+            p.append(i)
+        else:
+            l.append(i)
+    print(p,l)
+
+
+
+
+    #Q12
+
+    def ok():
+        w=input("Enter words")
+        o=w.split()
+        for i in o:
+            print(max(len(i)))
+
+
+def we():
+
+    #Print sum of the digits of a number
+    w=int(input("Enter number"))
+    s=0
+    while(w>0):
+        c=w%10
+        s+=c
+        w=w//10
+    print("sum of the digits=",s)
+
+
+    #print armstrong 
+    w=int(input("Enter numeber"))
+    z=w
+    l=0
+    while(w>0):
+        y=w%10
+        w1=y**3
+        l+=w1
+        w=w//10
+    if l==z:
+        print("It is an armstrong number")
+    else:
+        print("Ok")
+
+
+def up():
+    #WAP to uppercaase and lowercase the oppoite letters
+
+    a="ArNAv"
+    for i in range(len(a)):
+        if i%2==0:
+            print(a[i].upper(),end='')
+        else:
+            print(a[i].lower(),end='')
+
+
+def perfect_Number():
+    #program to find perfect number
+    w=int(input("Enter number"))
+    s=0
+    for i in range(1,w):
+        if w%i==0:
+            s+=i
+    if w==s:
+        print("perfect no")
+    else:
+        print("not")
+
+    #while conversion
+    w=int(input("Enter number"))
+    s=0
+    i=1
+    while(i<w):
+        if w%i==0:
+            s+=i
+        i+=1
+    if w==s:
+        print("perfect no")
+    else:
+        print("not")
+
+
+
+def neg():
+    #WAP to enter 5 numbers count the number of negetive nad pos numbers
+    se=0
+    w=0
+    for i in range(5):
+        y=int(input("Enter number"))
+        if y<0:
+            se+=1
+        else:
+            w+=1
+    print("Count of negetive numbers: ",se)
+    print("count of pos number: ",w)
+
+
+def tw():
+
+    #WAP to read a number if its even print it's factors otherwise, factorial
+
+    w=int(input("Enter a number"))
+    if w%2==0:
+        for io in range(1,w+1):
+            if w%io==0:
+                print(io)
+    else:
+        l=1
+        for ip in range(1,w+1):
+            l=l*ip
+        print(l)
+
+            

@@ -1,0 +1,258 @@
+def arnav(ch1):
+    s=0
+    i=0
+    while True:
+        p=int(input("Enter number"))
+        s+=p
+        i+=1
+        ch1=input("continue(y/n)")  
+        if ch1=="y":
+            continue
+        else:
+            break
+    print("i=",i)
+    av=s/i
+    print("sum=",s)
+    print("average=",av)
+
+
+def type():
+    w={"Arnav":7,"Yash":3,"Rishit":6}
+    x={"Anya":8,"a":9,"ok":6}
+    it= w | x   
+
+    print(it)
+
+def xi():
+    
+    w={"Arnav":7,"Yash":3,"Rishit":6}
+    print(max(w.values()))
+    print(min(w.values()))
+        
+        
+
+
+def ix():
+    w={}
+    x=int(input("How many entries"))
+    for i in range(x):
+        wp=input("Enter key:")
+        wv=input("Enter value:")
+        w[wp]=wv
+    
+    
+    c=0
+    for i in w:
+        if i=={}:
+            c=1
+    if c==1:
+        print("no data in dict")
+        
+    else: 
+        print("data in dict")
+
+
+def oo():
+    dic1 = {1:10,2:20}
+    dic2 = {3:30,4:40}
+    dic3 = {5:50,6:60}
+    
+    print(dic1 | dic2 | dic3)
+
+#input name of n employees and their salary details like 
+#basic salary , house rent, convence allowence. Calculate total salary of each employee and dislay
+def pr():
+    w={}
+    q=int(input("Enter how many entries: "))
+    for i in range(q):
+        name=input("Enter name: ")
+        bs=int(input("Enter basic salary: "))
+        hr=int(input("Enter house rent: "))
+        ca=int(input("Enter Conveynce allowence: "))
+        w[name]=(bs,hr,ca)
+    print("name\t\t\ttotal salary")
+    for i in w:
+        s=0
+        x=w[i]
+        for j in x:
+            s+=j
+        print(i,"\t\t\t\t",s)
+
+
+
+
+#Input a number and convert a number into words
+def Entrepreneurship():
+    w={0:"Zero",1:"One",2:"Two",3:"Threee",4:"Four",5:"Five",6:"Six",7:"Seven",8:"Eight",9:"Nine"}
+    p=input("Enter the number which you want in words: ")
+    for j in p:
+        x=int(j)
+        v=w[x]
+        print(w[x],end=' ')
+         
+            
+#Q41
+def malfu():
+
+    w = {"Hello":34, "Hi":5, "Hello":34, "Rishit":22,"Hi":5}
+    d={}
+    for i in w:
+        if i not in d:
+            d[i]=w[i]
+    print(d)
+
+#Q51
+def pylib():
+    w={}
+    y=int(input("How many classes and names: "))
+    for i in range(y):
+        name=input("Enter name: ")
+        clas=int(input("Enter class: "))
+        w[name]=clas
+    
+    dele=input("Enter the name whcih you want to delete: ")
+    for i in w:
+        if dele in w:
+            w.pop(dele)
+        break
+            
+    print(w)
+
+
+
+#Q52
+
+def cisco():
+    w={}
+    y=int(input("How many Monuments: "))
+    for i in range(y):
+        name=input("Enter Monument: ")
+        loc=input("Enter location of the Monument: ")
+        w[name]=loc
+
+    w1=input("Enter which monument you want to check if its present: ")
+    h=0
+    for i in w:
+        if w1==i:
+            h=1
+    if h==1:
+        print("Yes, this monument is present in the dict()")
+    else:
+        print("No :( its not present in the list")
+        
+
+#WAP store student info admission no., roll no., name,marks in a dict() and display information on the basis of admission no
+#in a tabular format
+
+def student():
+    w=int(input("Enter how many entries: "))
+    record={}
+    for i in range(w):
+        ad=int(input("Enter admission number: "))
+        roll=int(input("Enter roll numer: "))
+        marks=int(input("Enter marks: "))
+        name=input("Enter name: ")
+        record[ad]=(roll,marks,name)
+
+    for i in record:
+        print("Admission number:\t",i)
+        x=record[i]
+        print("roll no:\t\tmarks\t\tname")
+        for j in x:
+            print(j,end='\t\t')
+        print()
+
+#WAP to count the no of times a character appears in a given string using a dict()
+
+
+def lateral():
+    w=str(input("Enter string: "))
+    k={}
+    for i in w:
+        if i in k:
+            continue
+        else:
+            k[i]=w.count(i)
+    print(k)
+
+
+def mg():
+
+    w=int(input("Enter elements: "))
+    t=()
+    for i in range(w):
+        w=int(input("Enter arnav(0/10): "))
+        t+=(w,)
+    print(t)
+
+    l=list(t)
+
+
+    #dwad
+
+
+#Q40)
+def keywrk():
+    d1={'arnav':2,'ok':5,'stock':4}
+    c=1
+    for i in d1:
+        c*=d1[i]
+    print('sum of values=',c)
+#Q41
+def key():
+    d={"Arnav":4,"Chips":2,"PS4":8,"Arnav":4,"PS4":8}
+
+    for i in d:
+        for j in i:
+            if j==i:
+                d.pop(i)
+    print(d)
+        
+#Q52
+def work():
+    d={}
+    w1=int(input("How many monument + location you want to enter: "))
+    for i in range(w1):
+        x=input("Enter monument: ")
+        w=input("Enter location: ")
+        d[x]=w
+    p=input("Enter the monument which you want to search for: ")
+    f=0
+    for j in d:
+        if j==p:
+            f=1
+    if f==1:
+        print("Yes its present.")
+    else:
+        print("Not its not present.")
+        
+#Q49
+def power():
+    d={}
+    w1=int(input("Enter how many entries: "))
+    for i in range(w1):
+        w=input("Enter name")
+        x=int(input("Enter salary"))
+        d[w]=x
+    print(d)
+    c=0
+    x1=input("Enter the name to be searched for: ")
+    for i in d:
+        if x1==i:
+            c=1
+    if c==1:
+        print("Yes its present. Salary=",d[x1])
+    else:
+        print("No its not present.")
+
+
+
+def arnav():
+    d={}
+    for i in range(2):
+        x=input('enter string')
+        d[x[0]]=x
+    print(d)
+arnav()
+            
+

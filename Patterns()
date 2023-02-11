@@ -1,0 +1,198 @@
+
+#    1
+#   121
+#  12321
+# 1234321
+
+def pp():
+    for i in range(1,5):
+        for j in range(1,i+1):
+            print(i,end="")
+        print() 
+
+
+def pyw():
+    for i in range(1,6):#cols
+        for j in range(1,i+1):#rows
+            print(j,end='')
+        print()
+
+    for i in range(5,0,-1):
+        for j in range(1,i+1):
+            print(j,end='')
+        print()
+
+    for i in range(1,6):
+        for j in range(1,i+1):
+            print(i,end='')
+        print()
+
+
+    for i in range(5,0,-1):
+        for j in range(1,i+1):
+            print(i,end="")
+        print()
+
+
+def qwe():
+    for i in range(5,0,-1):
+        for j in range(i,0,-1):
+            print(j,end=" ")
+    print()
+
+
+def part():
+    for i in range(1,8,2):
+        for j in range(1,i+1,2):
+            print(i,end="")
+        print()
+
+
+def parameter():
+    """
+    A
+    AB
+    ABC
+    ABCD
+    """
+    for i in range(65,69):
+        for j in range(65,i+1):
+            print(chr(j),end='')
+        print()
+    """
+    A
+    BB
+    CCC
+    DDDD
+    """
+    for i in range(65,69):
+        for j in range(65,i+1):
+            print(chr(i),end='')
+        print()
+    """
+    DDDD
+    CCC
+    BB
+    A
+    """
+    for i in range(68,64,-1):
+        for j in range(65,i+1):
+            print(chr(i),end='')
+        print()
+
+    """
+    A
+    BC
+    DEF
+    GHIJ
+    """
+    k=65
+    for i in range(65,69):
+        for j in range(65,i+1):
+            print(chr(k),end='')
+            k+=1
+        print()
+
+    """
+    1
+    23
+    456
+    78910
+    """
+    k=1
+    for i in range(1,5):
+        for j in range(1,i+1):
+            print(k,end="")
+            k+=1
+        print()
+
+    """
+    1
+    21
+    321
+    4321
+    """
+    for i in range(1,5):
+        for j in range(i,0,-1):
+            print(j,end="")
+        print()
+
+
+def guy():
+    #___1
+    #__121
+    #_12321
+    #1234321
+
+    n=4
+    for i in range(1,n+1):#columns
+        for j in range(1,n):#rows
+            print(end=" ")
+        n=n-1
+        for m in range(1,i+1):
+            print(m,end="")
+        
+        for p in range(i-1,0,-1):
+            print(p,end="")
+        print()
+
+    #___A
+    #__ABA
+    #_ABCBA
+    #ABCDCBA
+
+    n=4
+    for i in range(65,69):#columns
+        for j in range(1,n):#rows
+            print(end=" ")
+        n=n-1
+        for m in range(65,i+1):
+            print(chr(m),end="")
+
+        for p in range(i-1,64,-1):
+            print(chr(p),end="")
+        print()
+
+
+
+def jj():
+    #1
+    #11
+    #111
+    #1111
+
+    for i in range():
+        for j in range(1,i+1):
+            print(i,end="")
+        print()
+
+
+#___1
+#__121
+#_12321
+#1234321
+
+def pat():
+    for i in range(1,5):
+        for j in range(i,4):
+            print(end=" ")
+        for k in range(1,i+1):
+            print(k,end="")
+        for l in range(i-1,0,-1):
+            print(l,end="")
+        print()
+#___*
+#__***
+#_*****
+#*******
+
+def christmas():
+
+    for i in range(1,5):
+        for j in range(i,4):
+            print(end=" ")
+        for k in range(1,i+1):
+            print("*",end="")
+        for l in range(i-1,0,-1):
+            print("*",end="")
+        print()

@@ -1,0 +1,20 @@
+def table(): #function body
+    n=int(input('enter no'))
+    for i in range(1,11):
+        print(n*i)
+table() #calling function
+
+def table(n1): #function body
+    for i in range(1,11):
+        print(n1*i)
+n=int(input('enter no'))    
+table(n) #calling function
+
+def table(n1): #function body
+    f=1
+    for i in range(1,n1+1):
+        f*=i
+    return(f)
+n=int(input('enter no'))    
+x=table(n) #calling function
+print(x)

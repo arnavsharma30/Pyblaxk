@@ -1,0 +1,283 @@
+#WAP to create a list upto n numbers and print sum and avg
+def n():
+
+    n=int(input("Enter entries"))
+    w=[]
+    for i in range(n):
+        x=int(input("Enter number"))
+        w.append(x)
+
+def avf():
+    w=[]
+    q=0
+    for i in w:
+        q+=i
+    print("Sum=",q)
+    print("Avg=",q/len(w))
+#WAP to find and display the sum of all the values which are ending with 3 from a list
+#WAP to find the max and min elements from a list
+#WAP to accepts a number and print the frequency of the number in the list if number is not in the list it shud print ("Number not found")
+#WAP to accepts integer array and search a particular value in the array if it exsists display "Exsists" otherwise "not exsists"
+#WAP to take a list w, add 5 in all odd values and 10 in all even values also display the list
+
+def sum():
+
+    n=int(input("Enter limit"))
+    w=[]
+    for i in range(n):
+        x=int(input("Enter 3 digit number"))
+        w.append(x)
+    print(w)
+    q=0
+    for i in w:
+        if i%10==3:
+            q+=i
+    print(q)
+def maxx():
+    w=[]
+    n=int(input("Enter limit"))
+    for i in range(n):
+        x=int(input("Enter list"))
+        w.append(x)
+    max=w[0]
+    min=w[0]
+    for i in range(1,len(w)):
+        if w[i]>max:
+            max=w[i]
+        elif w[i]<min:
+            min=w[i]
+    print("maximum=",max)
+    print("minimum=",min)
+        
+
+
+    
+def listt():
+    n=int(input("Enter entries"))
+    w=[]
+    for i in range(n):
+        x=int(input("Enter number"))
+        w.append(x)
+    w1=int(input("Enter number to find: "))
+    y=0
+    for i in w:
+        if w1==i:
+            y+=1
+    if y==0:
+        print("no. not found")
+    else:
+        print("Frequency of the number in the list:",y)   
+
+def arrayy():
+    n=int(input("Enter entries"))
+    w=[]
+    for i in range(n):
+        x=int(input("Enter number"))
+        w.append(x)
+    e=int(input("Enter number to be searched: "))
+    f=0
+    for i in range(len(w)):
+        print(w[i],i)
+        if w[i]==e:
+            f=1
+    if f==1:
+        print("Exsist")
+    else:
+        print("Not exsist")
+def oddval():
+    n=int(input("Enter entries"))
+    w=[]
+    for i in range(n):
+        x=int(input("Enter number"))
+        w.append(x)
+    for i in range(len(w)):
+        if w[i]%2==0:
+            w[i]+=10
+        else:
+            w[i]+=5
+    print(w)
+
+
+
+
+
+#WAP to display unique and dublicate items of a list into 2 diff list
+#WAP to display  ^2 of an element if its an integer and change the case if the element is a string
+#WAP to display and count those strings which are starting with character "a"
+#[IMP]WAP to swap the content with the next value divisible by 7
+
+#[2,3,4,2,2,4,7,8]
+#[2,3,4,7,8]
+#[2,4] 
+def ok():
+    w=[2,3,4,2,4,7,8]
+    x=[]
+    y=[]
+    """ n=int(input("Enter entries"))
+    for i in range(n):
+        x=int(input("Enter number"))
+        w.append(x)"""
+    print(w)
+    for i in w:
+        if i not in x:
+            x.append(i)
+        else:
+            y.append(i)
+        
+    print(x)
+    print(y)
+
+
+def pyt():
+    w=[]
+    n=int(input("Enter entries"))
+    for i in range(n):
+        x=input("Enter data")
+        w.append(x)
+    for i in w:
+        if type(i)==int:
+            print(i**2)
+        else:
+            print(i.swapcase())
+        
+#WAP to display and count those strings which are starting with character "a"
+
+def ui():
+    w=[]
+    n=int(input("Enter entries"))
+    for i in range(n):
+        x=input("Enter data")
+        w.append(x)
+    p=0
+    for i in w:
+        if i[0]=="a":
+            p+=1
+            print(i)
+    print("no. of string starting with 'a'=",p)
+
+
+"""4,5,7,9,2,14,8
+    4,5,9,7    
+    """
+def ll():
+    w=[4,5,7,9,2,14,8,]
+    i=0
+    print(w)
+    while(i<len(w)):
+        if w[i]%7==0:
+            c=w[i]
+            w[i]=w[i+1]
+            w[i+1]=c
+            #w[i],w[i+1]=w[i+1],w[i]
+            i=i+2
+        else:
+            i=i+1
+    print(w)
+
+
+
+#WAP count the number of strings if the string length is 2 or more and the first and last is same 
+#['arnav','aba','cfg','radar']
+# find value 20 in a list and replace with 200. only update the first occurance of a value
+
+
+
+def gi():
+    w=['arnav','aba','cfg','radar']
+    p=0
+    for i in w:
+        if i[0]==i[-1] and len(i)>=2:
+            p+=1
+    print(p)
+
+def gina():
+    w=[1,7,20,10,20,25,250]
+    p=0
+    for i in range(len(w)):
+        if w[i]==20:
+            w[i]=200
+            print(i)
+            break
+    print(w)
+
+def amy():
+    
+    l=[10,20,30]
+    l1=[20,10,50]
+    l2=[]
+    for i in l:
+        for j in l1:
+            if i==j:
+                l2+=[i]
+    print(l2)
+
+
+
+def rwa(enter):
+    l1=enter
+    l3=l1[:]
+    l4=list(l1)
+    print(l4)
+    print(l3)
+
+
+#WAP to read a list of elements. input an element from the user that has to be inserted. Also, input the position at which
+# it is to be inserted. Print the final list
+def w(element,position):
+    p=[10,20,30,40,50]
+    element=int(input("Enter element to be inserted: "))
+    position=int(input("Enter which position where element shud get inserted: "))
+    p.insert(position,element)
+    print(p)
+    
+
+    
+def ice():
+    l=[10,20,30]
+    print(l[-1::-1])
+
+
+    
+#WAP to delete all odd numbers and negetive numbers from a list
+def icee():
+    list1=[10,7,2,9,-1,13,17,-234]
+    for i in range(len(list1)):
+        if list1[i]%2==0:
+            list1.pop(list1[i])
+        elif list1[i]<0:
+            del list1[i]
+    print(list1)
+
+def icce():
+    l1=[10,7,2,9,-1,13,17,-234,-17]
+    for i in l1:
+        if i%2!=0 or i<0:
+            l1.remove(i)
+        
+    print(l1)
+
+
+#WAP to print avg of all values in the list
+
+def avragecalc():
+    l1=[490,-2,20,10,100,230]
+    sum=0
+    for i in l1:
+        sum+=int(i)
+    avg=sum/len(l1)
+    print(avg)
+
+
+#WAP which multiplies every second element of the list by 2
+def garm():
+    l1=[23,5,7,88,9,74,3,2,]
+    for i in range(len(l1)):
+        if i%2==1:
+            l1[i]=l1[i]*2
+    print(l1)
+#avragecalc()
+        
+def javlin():
+    l1=[92,65,78,88,100,200]
+    for i in range(len(l1)):
+        print(i)
